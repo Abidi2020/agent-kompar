@@ -28,7 +28,7 @@ function App() {
         <div className="container">
           <ToastContainer position="top-center"/>
           <Switch>
-            <Route exact path="/#/" component={Form} />
+            <Route exact path="/" component={Form} />
             <Route exact path="/offer/:id" component={Offer} />
           </Switch>
         </div>
