@@ -71,7 +71,7 @@ router.post("/", async (req, res) => {
         html: `
         <p>Cher ${fullName}</p>
         <p>Vous venez d’effectuer une simulation de consommation pour un nouveau contrat de fourniture d’énergie par téléphone il y a quelques instants</p>
-        <h5>Cliquer ici <a href="http://agent-kompar.herokuapp.com/offer/${offer._id}">Offre de souscription</a> </h5>
+        <h5>Cliquer ici <a href="http://localhost:3000/offer/${offer._id}">Offre de souscription</a> </h5>
         <p>Nous vous remercions de votre confiance et nous nous réjouissons de vous compter bientôt parmi nos nouveaux clients !Cordialement</p>
         <p>À très bientôt, Votre conseiller Kompar.</p>
         `, // html body
