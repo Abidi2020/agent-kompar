@@ -29,7 +29,7 @@ function App() {
           <ToastContainer position="top-center"/>
           <Switch>
             <Route exact path="/" component={Form} />
-            <Route exact path="/offer/:id" component={Offer} />
+            <Route exact path="https://agent-kompar.herokuapp.com/offer/:id" component={Offer} />
           </Switch>
         </div>
       </BrowserRouter>
