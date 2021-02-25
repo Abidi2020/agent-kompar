@@ -14,6 +14,10 @@ import { ButtonGroup } from "@material-ui/core";
 import Form from "./component/Form";
 import Offer from "./component/Offer";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+  
+
 function App() {
 
 
@@ -22,6 +26,7 @@ function App() {
       <BrowserRouter>
         <ButtonAppBar />
         <div className="container">
+          <ToastContainer position="top-center"/>
           <Switch>
             <Route exact path="/" component={Form} />
             <Route exact path="/offer/:id" component={Offer} />

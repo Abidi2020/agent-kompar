@@ -1,5 +1,6 @@
 import { ADD_FORM, GET_FORM } from './types'
 import axios from 'axios'
+import { toast } from 'react-toastify'
 
 // Add form
 export const addForm = (formData, history) => async (dispatch) => {
@@ -11,6 +12,8 @@ export const addForm = (formData, history) => async (dispatch) => {
             type: ADD_FORM,
             payload: res.data
         })
+
+        toast.success(`Email sent to ${res.data.email}`)
 
         history.push(`/offer/${res.data._id}`)
         
